@@ -13,7 +13,7 @@ variable "workspacename" {
   default = "test_workspace"
 }
 
-ariable "insightname" {
+variable "insightname" {
   type = string
   default = "apin-ads-dev-001"
 }
