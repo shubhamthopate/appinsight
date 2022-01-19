@@ -1,4 +1,4 @@
 rgname = "rg-ads-dev-001"
 location = "eastus"
-workspacename = "test_workspace"
+workspacename = "testworkspace"
 insightname = "apin-ads-dev-001"

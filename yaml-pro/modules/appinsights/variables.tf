@@ -10,7 +10,7 @@ variable "location" {
 
 variable "workspacename" {
   type = string
-  default = "test_workspace"
+  default = "testworkspace"
 }
 
 variable "insightname" {
