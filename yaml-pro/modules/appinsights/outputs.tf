@@ -4,4 +4,5 @@ output "instrumentation_key" {
 
 output "app_id" {
   value = azurerm_application_insights.example.app_id
+  sensitive = true
 }
