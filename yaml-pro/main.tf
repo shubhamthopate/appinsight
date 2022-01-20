@@ -10,6 +10,10 @@ resource "azurerm_resource_group" "main" {
 
 module "module1" {
  source = "./modules/appinsights"
+ rgname = var.rgname
+ location = var.location
+ workspacename = var.workspacename
+ insightname = var.insightname
 }
 
 module "module2" {
