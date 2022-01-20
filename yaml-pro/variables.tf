@@ -20,7 +20,3 @@ variable "insightname" {
 
 
 
-variable "serviceplanid" {
-  type = string
-  default = "default"
-}
