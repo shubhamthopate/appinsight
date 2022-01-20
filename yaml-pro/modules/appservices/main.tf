@@ -3,26 +3,17 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
+  name     = var.rgname
+  location = var.location
 }
 
-resource "azurerm_app_service_plan" "example" {
-  name                = "example-appserviceplan"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-
-  sku {
-    tier = "Standard"
-    size = "S1"
-  }
-}
 
 resource "azurerm_app_service" "example" {
-  name                = "example-app-service"
+  count = 2
+  name                = "apsvc-ads-dev-001$(count.index)"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  app_service_plan_id = azurerm_app_service_plan.example.id
+  app_service_plan_id = ["${module.appseviceplan.appserviceplan-id}"]
 
   site_config {
     dotnet_framework_version = "v4.0"
