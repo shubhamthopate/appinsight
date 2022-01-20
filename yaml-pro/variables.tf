@@ -18,10 +18,7 @@ variable "insightname" {
   default = "apin-ads-dev-001"
 }
 
-variable "appservicename" {
-  type = string
-  
-}
+
 
 
 
