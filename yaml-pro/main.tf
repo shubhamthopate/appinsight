@@ -18,7 +18,7 @@ module "module1" {
 
 module "module2" {
  source = "./modules/appseviceplan"
- serviceplanid = module.module2.appserviceplan-id
+ # serviceplanid = module.module2.appserviceplan-id
  
 
 }
