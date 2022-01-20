@@ -23,9 +23,6 @@ variable "appservicename" {
   
 }
 
-variable "serviceplanid" {
-  type = string
-  
-}
+
 
 
