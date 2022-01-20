@@ -8,3 +8,7 @@ variable "location" {
   default = "eastus"
 }
 
+variable "servicename" {
+  type = list
+  default = ["apsvc-ads-dev-001","apsvc-ads-dev-002"]
+}
