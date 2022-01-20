@@ -18,5 +18,14 @@ variable "insightname" {
   default = "apin-ads-dev-001"
 }
 
+variable "appservicename" {
+  type = string
+  
+}
+
+variable "serviceplanid" {
+  type = string
+  
+}
 
 

@@ -18,6 +18,8 @@ module "module1" {
 
 module "module2" {
  source = "./modules/appseviceplan"
+ appservicename = var.appservicename
+
 }
 
 module "module3" {
