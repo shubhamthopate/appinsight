@@ -7,6 +7,9 @@ resource "azurerm_resource_group" "example" {
   location = var.location
 }
 
+module "appseviceplan" {
+  source = "./modules/appseviceplan"
+}
 
 resource "azurerm_app_service" "example" {
   count = 2
