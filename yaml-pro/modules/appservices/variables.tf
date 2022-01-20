@@ -8,3 +8,8 @@ variable "location" {
   default = "eastus"
 }
 
+variable "serviceplanid" {
+  type = string
+ 
+}
+
