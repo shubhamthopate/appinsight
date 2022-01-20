@@ -13,7 +13,7 @@ module "appseviceplan" {
 
 resource "azurerm_app_service" "example" {
   count = 2
-  name                = "apsvc-ads-dev-001-${count.index}"
+  name                = "apsvc-ads-dev-00${count.index}"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   app_service_plan_id = module.appseviceplan.appserviceplan-id
