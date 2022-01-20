@@ -18,11 +18,13 @@ module "module1" {
 
 module "module2" {
  source = "./modules/appseviceplan"
- appservicename = var.appservicename
+ serviceplanid = module.module2.appserviceplan-id
+ 
 
 }
 
 module "module3" {
  source = "./modules/appservices"
- serviceplanid = module.module2.appserviceplan-id
+ appservicename = var.appservicename
+ 
 }
