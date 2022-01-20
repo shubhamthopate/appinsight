@@ -1,11 +1,6 @@
-provider "azurerm" {
-  features {}
-}
 
-resource "azurerm_resource_group" "main" {
-  name     = var.rgname
-  location = var.location
-}
+
+
 
 resource "azurerm_app_service_plan" "main" {
   name                = var.appservicename
