@@ -16,7 +16,7 @@ resource "azurerm_app_service" "example" {
   name                = "apsvc-ads-dev-001$(count.index)"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  app_service_plan_id = ["${module.appseviceplan.appserviceplan-id}"]
+  app_service_plan_id = module.appseviceplan.appserviceplan-id
   tags = {
     Dept: "IT"
     Env: "Dev"
